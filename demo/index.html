@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="../engine.js" defer></script>
+    <script src="index.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="one">Hello, one!</div>
+      <div i="@default:[hide()]" id="two">
+        <span>Hello, two!</span>
+        <span>something else.</span>
+      </div>
+      <div i="@default:[hide()]" id="three">
+        <span>Hello, three!</span>
+      </div>
+    </div>
+
+    <div i="@click:[hide(#two #three), show(#one)]" id="button1">button1-点击显示one</div>
+    <div i="@click:[hide(#one #three), show(#two)]" id="button2">button2-点击显示two</div>
+    <div i="@click:[hide(#one #two), show(#three)]" id="button3">button3-点击显示three</div>
+    <div i="@mouseover:[enable(#one.mode2)] ; @mouseleave:[disable(#one.mode2)]" id="button4">button4-鼠标悬浮时one会变色</div>
+  </body>
+</html>
+

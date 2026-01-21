@@ -1,0 +1,37 @@
+div#one {
+  /* 添加样式属性 */
+  background-color: yellowgreen;
+  width: 100px;
+  height: 100px;
+}
+
+div#two {
+  /* 添加样式属性 */
+  background-color: skyblue;
+  width: 100px;
+  height: 100px;
+}
+
+div#three {
+  /* 添加样式属性 */
+  background-color: cyan;
+  width: 100px;
+  height: 100px;
+}
+
+.mode2 {
+  background-color: orange !important;
+}
+
+div#button1,
+div#button2,
+div#button3,
+div#button4 {
+  /* 添加样式属性 */
+  background-color: rgb(219, 203, 203);
+  cursor: pointer;
+  width: 250px;
+  height: 25px;
+  margin-top: 30px;
+}
+
